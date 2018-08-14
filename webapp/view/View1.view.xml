@@ -1,0 +1,98 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:m="sap.m"
+	controllerName="xtext.xtext.controller.View1">
+	<App class="myapp">
+		<pages>
+			<Page title="Вода, везде вода">
+				<content>
+					<html:style>
+						<!--.myText:selection{ background-color:teal; color:white;}-->
+					</html:style>
+					<Toolbar>
+						<ToolbarSpacer/>
+						<Button text="Добавить" width="30%" id="Add" textDirection="LTR" press="OnAdd"/>
+						<Button width="30%" id="button1" text="Изменить" press="OnEdit"/>
+						<Button text="Удалить" width="30%" id="button2" press="OnDelete"/>
+						<ToolbarSpacer/>
+						<SearchField width="50%" search="onFilter"/>
+						<ToolbarSpacer/>
+						<Button press="onTableSettings" icon="sap-icon://drop-down-list" tooltip="Settings"/>
+					</Toolbar>
+					<Table noDataText="Drop column list items here and columns in the area above" id="table" items="{/IOT_VSP}" growingScrollToLoad="true"
+						growingThreshold="10" headerDesign="Plain" enableBusyIndicator="false" backgroundDesign="Solid" alternateRowColors="true"
+						modeAnimationOn="false">
+						<items>
+							<ColumnListItem id="List" press="OnSelectionChange" type="Active">
+								<cells>
+									<Text text="{ID_VSP}" id="text0"/>
+									<Text text="{ADDRESS}" id="text1"/>
+									<Text text="{NAME_VSP}" id="text2_copy2"/>
+									<Text text="{WATER_CAPACITY} бут." id="text2"/>
+									<Text text="{WATER_MIN} бут." id="text2_copy"/></cells>
+							</ColumnListItem>
+						</items>
+						<columns>
+							<Column id="ID_col">
+								<header press="sort_id">
+									<Label text="ID" id="label0"/>
+								</header>
+							</Column>
+							<Column id="column1">
+								<header>
+									<Label text="Адрес" id="label1"/>
+								</header>
+							</Column>
+							<Column id="column2">
+								<header>
+									<Label text="Название" id="label2"/>
+								</header>
+							</Column>
+							<Column id="column0_1533797857277">
+								<header>
+									<Label text="Запас воды макс." id="label0_1533797857442"/>
+								</header>
+							</Column>
+							<Column id="column1_1533797858123">
+								<header>
+									<Label text="Запас воды мин." id="label1_1533797858282"/>
+								</header>
+							</Column>
+						</columns>
+					</Table>
+					<Toolbar width="100%" id="toolbar1">
+						<content>
+							<Button text="Добавить" width="30%" press="OnAdd1"/>
+							<Button width="30%" text="Изменить" press="OnEdit1"/>
+							<Button text="Удалить" width="30%" press="OnDelete1"/>
+							<ToolbarSpacer/>
+							<SearchField width="50%" search="onFilter1"/>
+							<ToolbarSpacer/>
+							<Button press="onTableSettings1" icon="sap-icon://drop-down-list" tooltip="Settings"/>
+						</content>
+					</Toolbar>
+					<Table noDataText="Drop column list items here and columns in the area above" id="Table1" items="{/IOT_MAP}" growingScrollToLoad="true"
+						growingThreshold="10" headerDesign="Plain" modeAnimationOn="false" select="OnSelectionChange1">
+						<items>
+							<ColumnListItem type="Active" id="List1" press="OnSelectionChange1" class="myText">
+								<cells>
+									<Text text="{G_DEVICE}" id="text01"/>
+									<Text text="{ID_VSP}" id="text02"/>
+								</cells>
+							</ColumnListItem>
+						</items>
+						<columns>
+							<Column id="column01">
+								<header>
+									<Label text="G_Device" id="label01"/>
+								</header>
+							</Column>
+							<Column visible="false" id="column02">
+								
+							</Column>
+						</columns>
+					</Table>
+				</content>
+				<headerContent/>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

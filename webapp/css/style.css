@@ -1,0 +1,23 @@
+/* Enter your custom styles here */
+.sapMShellBrandingBar{
+	background: linear-gradient(to right, violet, indigo,  blue, green, yellow, orange, red);
+	/*height: 6px;*/
+}
+@media (min-width:1280px) {
+	.sapMShellBrandingBar {
+		width: 1280px;
+		margin-left: -640px;
+		left: 50%;
+	}
+}
+.sapMBarPH{
+	border-radius: 0 0 10px 10px;
+    box-shadow: 0 0 5px 5px rgba(99,127,153,0.5);	
+    background: url(/image/sberbank_logo.png) left center no-repeat;
+}
+
+/*.sapMListTblHeader, .sapMListBGTranslucent, .sapMListTblFooter{
+	border-radius: 0 0 10px 10px;
+    box-shadow: 0 0 5px 5px rgba(99,127,153,0.5);	
+}
+*/

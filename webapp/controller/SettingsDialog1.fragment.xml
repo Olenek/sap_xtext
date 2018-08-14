@@ -1,0 +1,7 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml">
+	<ViewSettingsDialog confirm="onConfirm1">
+		<sortItems>
+			<ViewSettingsItem selected="true" key="ID_VSP" text="ID_VSP"/>
+		</sortItems>
+	</ViewSettingsDialog>
+</core:FragmentDefinition>

@@ -1,0 +1,9 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml">
+	<ViewSettingsDialog confirm="onConfirm">
+		<sortItems>
+			<ViewSettingsItem selected="true" key="ID_VSP" text="ID_VSP"/>
+			<ViewSettingsItem key="WATER_CAPACITY" text="Вода!"/>
+			<ViewSettingsItem key="WATER_MIN" text="Вода мин?!"/>
+		</sortItems>
+	</ViewSettingsDialog>
+</core:FragmentDefinition>
