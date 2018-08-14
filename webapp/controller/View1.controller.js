@@ -34,7 +34,7 @@ sap.ui.define(["sap/ui/core/mvc/Controller",
 				content: [new sap.ui.layout.HorizontalLayout({
 					content: [
 						new sap.ui.layout.VerticalLayout({
-							width: "140px",
+							width: "400px",
 							content: [
 								new sap.m.Label({
 									text: "ID ВСП"
@@ -54,7 +54,8 @@ sap.ui.define(["sap/ui/core/mvc/Controller",
 							]
 						}),
 						new sap.ui.layout.VerticalLayout({
-							width: "140px",
+							width: "400px",
+
 							content: [
 								new sap.m.Input("VSP_ID", {
 									value: NewOrgUnitID,
@@ -121,32 +122,23 @@ sap.ui.define(["sap/ui/core/mvc/Controller",
 			// Calculate the new OrgUnit ID 
 			// call Dialog popup
 			var dialog = new sap.m.Dialog({
-				title: "Добавьте новое ВСП",
+				title: "Добавьте новый G_device",
 				type: "Message",
 				content: [new sap.ui.layout.HorizontalLayout({
 					content: [
 						new sap.ui.layout.VerticalLayout({
-							width: "140px",
+							width: "400px",
 							content: [
 								new sap.m.Label({
-									text: "ID ВСП"
+									text: "G_Device"
 								}),
 								new sap.m.Label({
-									text: "Название ВСП:"
-								}),
-								new sap.m.Label({
-									text: "Адрес ВСП:"
-								}),
-								new sap.m.Label({
-									text: "Вода макс ВСП:"
-								}),
-								new sap.m.Label({
-									text: "Вода мин ВСП:"
+									text: "ID ВСП:"
 								})
 							]
 						}),
 						new sap.ui.layout.VerticalLayout({
-							width: "140px",
+							width: "400px",
 							content: [
 								new sap.m.Input("G_DEVICE"),
 								new sap.m.Input("ID_VSP")
@@ -209,12 +201,12 @@ sap.ui.define(["sap/ui/core/mvc/Controller",
 
 			// call Dialog popup
 			var dialog = new sap.m.Dialog({
-				title: "Add Organization Unit",
+				title: "Изменить информацию о ВСП",
 				type: "Message",
 				content: [new sap.ui.layout.HorizontalLayout({
 					content: [
 						new sap.ui.layout.VerticalLayout({
-							width: "140px",
+							width: "400px",
 							content: [
 								new sap.m.Label({
 									text: "ID ВСП:"
@@ -234,6 +226,8 @@ sap.ui.define(["sap/ui/core/mvc/Controller",
 							]
 						}),
 						new sap.ui.layout.VerticalLayout({
+							width: "400px",
+
 							content: [
 								new sap.m.Input("VSPUnitID", {
 									value: oVSPUnitID,
@@ -311,12 +305,12 @@ sap.ui.define(["sap/ui/core/mvc/Controller",
 			var oG_device = oVSPUnit["G_DEVICE"];
 			// call Dialog popup
 			var dialog = new sap.m.Dialog({
-				title: "Add Organization Unit",
+				title: "Изменить G_Device",
 				type: "Message",
 				content: [new sap.ui.layout.HorizontalLayout({
 					content: [
 						new sap.ui.layout.VerticalLayout({
-							width: "140px",
+							width: "400px",
 							content: [
 								new sap.m.Label({
 									text: "G_device:"
@@ -327,6 +321,8 @@ sap.ui.define(["sap/ui/core/mvc/Controller",
 							]
 						}),
 						new sap.ui.layout.VerticalLayout({
+							width: "400px",
+
 							content: [
 								new sap.m.Input("G_device", {
 									value: oG_device,
